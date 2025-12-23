@@ -1,4 +1,4 @@
-# Rainwater Harvesting 
+# Rainwater Harvesting App
 # 🌧️ P14: Smart Rooftop Rainwater Harvester
 
 A web-based assessment tool designed for on-spot evaluation of **Rooftop Rainwater Harvesting (RTRWH)** and **Artificial Recharge (AR)** potential. This project aims to help homeowners and urban planners in India calculate water conservation benefits easily.
