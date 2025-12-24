@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P14 - Rainwater Harvester Assessment</title>
+    <title>Rainwater Harvesting Assessment App</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -20,7 +26,7 @@
                     <label>Catchment Area (sq. meters)</label>
                     <input type="number" id="area" placeholder="e.g. 100">
                 </div>
-                
+
                 <div class="form-group">
                     <label>Roof Material</label>
                     <select title="selet" id="coefficient">
@@ -35,7 +41,7 @@
                     <input type="number" id="rainfall" placeholder="e.g. 800">
                 </div>
 
-                <button id="calculate-btn" >Assess Potential</button>
+                <button id="calculate-btn">Assess Potential</button>
             </section>
 
             <section id="results" class="result-card hidden">
@@ -55,4 +61,5 @@
     <script src="js/calculate.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
