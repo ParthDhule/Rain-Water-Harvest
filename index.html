@@ -3,11 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainwater Assessment</title>
+    <title>P14 - Rainwater Harvester Assessment</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h2>Rainwater Assessment App</h2>
+    <div class="container">
+        <header>
+            <h1>Rooftop Rainwater Assessment</h1>
+            <p>Smart Tool for Artificial Recharge Potential</p>
+        </header>
+
+        <main>
+            <section class="input-card">
+                <h3>Enter Details</h3>
+                <div class="form-group">
+                    <label>Catchment Area (sq. meters)</label>
+                    <input type="number" id="area" placeholder="e.g. 100">
+                </div>
+                
+                <div class="form-group">
+                    <label>Roof Material</label>
+                    <select title="selet" id="coefficient">
+                        <option value="0.9">Concrete (90% Runoff)</option>
+                        <option value="0.8">Tiles (80% Runoff)</option>
+                        <option value="0.7">Corrugated Metal (70% Runoff)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Avg. Annual Rainfall (mm)</label>
+                    <input type="number" id="rainfall" placeholder="e.g. 800">
+                </div>
+
+                <button id="calculate-btn" >Assess Potential</button>
+            </section>
+
+            <section id="results" class="result-card hidden">
+                <h3>Assessment Results</h3>
+                <div class="res-item">
+                    <span>Annual Harvesting Potential:</span>
+                    <strong id="harvest-val">0</strong> Liters
+                </div>
+                <div class="res-item">
+                    <span>Recommended Tank Size:</span>
+                    <strong id="tank-val">0</strong> Liters
+                </div>
+            </section>
+        </main>
+    </div>
+
     <script src="js/calculate.js"></script>
     <script src="js/main.js"></script>
 </body>
