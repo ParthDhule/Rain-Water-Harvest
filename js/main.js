@@ -1,4 +1,6 @@
 
+// this code works for without json file and have to put the rainfall in (mm) manually no city selection feature.
+
 // document.getElementById('calculate-btn').addEventListener('click', () => {
 //     const area = parseFloat(document.getElementById('area').value);
 //     const rainfall = parseFloat(document.getElementById('rainfall').value);
